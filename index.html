@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Google Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -16,74 +25,81 @@
   <body>
     <main class="main">
       <section class="section">
-        <h1 class="title">Your Result</h1>
+        <h1 class="section__title">Your Result</h1>
         <div class="circle">
-          <p>
-            <strong> 76 </strong>
-            of 100
+          <p class="circle__result">
+            <span class="circle__result--size"> 76 </span>
+            <br />of 100
           </p>
         </div>
-        <h2>Great</h2>
-        <p>
+        <h2 class="section__subtitle">Great</h2>
+        <p class="section__paragraph">
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </section>
-      <section class="section">
-        <h3>Summary</h3>
-        <ul>
-          <li>
-            <img src="#" alt="" />
-            <span>Reaction</span>
-            <p>
-              <strong>80</strong>
+
+      <section class="section section--two">
+        <h3 class="section-two__title">Summary</h3>
+        <ul class="summary-list">
+          <li class="category category--red">
+            <div class="container">
+              <img src="./assets/images/icon-reaction.svg" alt="Reaction" />
+              <span class="category__name">Reaction</span>
+            </div>
+            <p class="category__point">
+              <span class="category__point--span">80</span>
               / 100
             </p>
           </li>
-          <li>
-            <img src="#" alt="" />
-            <span>Memory</span>
-            <p>
-              <strong>92</strong>
+          <li class="category category--yellow">
+            <div class="container">
+              <img src="./assets/images/icon-memory.svg" alt="Memory" />
+              <span class="category__name">Memory</span>
+            </div>
+            <p class="category__point">
+              <span class="category__point--span">92</span>
               / 100
             </p>
           </li>
-          <li>
-            <img src="#" alt="" />
-            <span>Verbal</span>
-            <p>
-              <strong>61</strong>
+          <li class="category category--green">
+            <div class="container">
+              <img src="./assets/images/icon-verbal.svg" alt="Verbal" />
+              <span class="category__name">Verbal</span>
+            </div>
+            <p class="category__point">
+              <span class="category__point--span">61</span>
               / 100
             </p>
           </li>
-          <li>
-            <img src="#" alt="" />
-            <span>Visual</span>
-            <p>
-              <strong>72</strong>
+          <li class="category category--blue">
+            <div class="container">
+              <img src="./assets/images/icon-visual.svg" alt="Visual" />
+              <span class="category__name">Visual</span>
+            </div>
+            <p class="category__point">
+              <span class="category__point--span">72</span>
               / 100
             </p>
           </li>
         </ul>
-        <button type="button">Continue</button>
+        <button class="section-two__button" type="button">Continue</button>
       </section>
     </main>
 
     <footer class="footer">
-      <p class="attribution">
-        Challenge by
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Frontend Mentor</a
-        >. Coded by
-        <a
-          href="https://www.frontendmentor.io/profile/NahuelEF"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Nahuel Fedele</a
-        >.
-      </p>
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/NahuelEF"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Nahuel Fedele</a
+      >.
     </footer>
   </body>
 </html>
