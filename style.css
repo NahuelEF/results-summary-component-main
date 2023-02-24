@@ -20,6 +20,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
 }
 html {
   scroll-behavior: smooth;
@@ -245,59 +246,5 @@ body {
   .section {
     width: 100%;
     border-radius: 0 0em 3em 3em;
-  }
-
-  .section__title {
-  }
-
-  .circle {
-  }
-
-  .circle__result {
-  }
-
-  .circle__result--size {
-  }
-
-  .section__subtitle {
-  }
-
-  .section__paragraph {
-  }
-
-  .section--two {
-  }
-
-  .section-two__title {
-  }
-
-  .summary-list {
-  }
-
-  .category {
-  }
-
-  .category--red {
-  }
-
-  .category--yellow {
-  }
-
-  .category--green {
-  }
-
-  .category--blue {
-  }
-
-  .container {
-  }
-
-  .category__point {
-  }
-
-  .category__point--span {
-  }
-
-  .section-two__button {
   }
 }
