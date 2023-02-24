@@ -1,5 +1,16 @@
 const url = "./data.json";
 const list = document.getElementById("list");
+const score = document.getElementById("score");
+
+let number = 0;
+let counter = setInterval(() => {
+  number += 1;
+
+  score.textContent = number;
+  if (number === +score.getAttribute("data-target")) {
+    clearInterval(counter);
+  }
+}, 20);
 
 fetch(url)
   .then((response) => response.json())
